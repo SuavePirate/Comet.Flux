@@ -15,7 +15,7 @@ namespace Xamarin.Flux
     {
         private readonly TodoStore _todoStore = new TodoStore();
         private readonly TodoActions _actions = new TodoActions();
-        State<List<Todo>> Todos;
+        readonly State<List<Todo>> Todos;
         public MainPage()
         {
             Todos = _todoStore.Data.ToList();
@@ -24,7 +24,7 @@ namespace Xamarin.Flux
 
         private void ResetState()
         {
-            Todos = _todoStore.Data.ToList();
+            Todos.Value = _todoStore.Data.ToList();
         }
 
         /// <summary>

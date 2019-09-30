@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluxToolkit;
+using FluxToolkit.Definitions;
 using Xamarin.Flux.ActionTypes;
 using Xamarin.Flux.Models;
 
