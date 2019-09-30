@@ -82,8 +82,8 @@ namespace Xamarin.Flux
             new HStack {
                 new Button("Add", () => _actions.AddTodo("Todo again")),
                 new Button("Toggle All", () => _actions.ToggleAllTodos())
-            }
+            },
             new TodoListView(Todos.Value)
-        }
+        };
     }
 }
