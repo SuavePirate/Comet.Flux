@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Comet;
+using FluxToolkit;
 using Xamarin.Flux.Actions;
 using Xamarin.Flux.ActionTypes;
 using Xamarin.Flux.Models;
