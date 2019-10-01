@@ -15,6 +15,7 @@ namespace Xamarin.Flux
     {
         private readonly TodoStore _todoStore = new TodoStore();
         private readonly TodoActions _actions = new TodoActions();
+        [State]
         readonly State<List<Todo>> Todos;
         public MainPage()
         {
