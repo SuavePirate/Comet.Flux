@@ -85,7 +85,7 @@ namespace Xamarin.Flux
                 new Button("Add", () => _actions.AddTodo("Todo again")),
                 new Button("Toggle All", () => _actions.ToggleAllTodos())
             },
-            new TodoListView(Todos.Value)
+            new TodoListView(Todos.Value).Frame(200, 600, Alignment.Center)
         };
     }
 }
