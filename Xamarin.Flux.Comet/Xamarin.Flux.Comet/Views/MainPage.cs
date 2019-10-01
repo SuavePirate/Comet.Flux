@@ -19,7 +19,7 @@ namespace Xamarin.Flux
         readonly State<List<Todo>> Todos;
         public MainPage()
         {
-            Todos = _todoStore.Data.ToList();
+            Todos = new State<List<Todo>>(_todoStore.Data.ToList());
             _todoStore.OnEmitted += TodoStore_OnEmitted;
         }
 
